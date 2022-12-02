@@ -1,8 +1,10 @@
 import '../css/Common.css'
-function Article() {
+function Article(props) {
+  // const {id, name, content, author, sub_date} = props.articleData;
+  console.log(props)
   return(
     <div id="Article">
-      <p>article</p>
+      {/* <h3>{name}</h3> */}
     </div>
   )
 }

@@ -1,10 +1,18 @@
 import '../css/Common.css'
 import Article from './Article'
-function ArticleList() {
+import {useState} from 'react'
+function ArticleList(props) {
+  
+  const [articles, setArticles] = useState(props.articles)
+
+  // const result = articles.map(
+  //   (data, idx) => <Article key={idx} articleData={data}/>
+  // )
+
   return(
     <div id="ArticleList">
       <h1>ArticleList</h1>
-      <Article />
+      {/* {result} */}
     </div>
   )
 }
