@@ -10,18 +10,18 @@ function Home(props) {
   }, [])
   
   const [articles, setArticles] = useState([]);
-  
+
+
   const dataLoading = async() => {
     const result = await axios.get('/bbs');
-    console.log(result.data) // 서버에서 가져온 json 데이터 정상 출력
-    setArticles(articles.concat(result.data));
-    console.log(articles) // 빈 배열 출력
+    setArticles(result.data);
   }
+  
 
   return(
     <div id="Home">
       <h1>Home</h1>
-      <ArticleList articles={articles} />
+      <ArticleList articles={articles} />  
     </div>
   )
 }

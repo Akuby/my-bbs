@@ -3,6 +3,7 @@ import WriteArticle from './components/WriteArticle'
 import Home from './components/Home';
 import Header from './components/Header'
 import NotFound from './components/NotFound'
+import ReadArticle from './components/ReadArticle';
 import './App.css';
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/w' element={<WriteArticle />} />
-          <Route path="/*" element={<NotFound />}></Route>
+          <Route path='/article/:articleId' element={<ReadArticle />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
