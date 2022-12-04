@@ -1,0 +1,50 @@
+.main-header {
+  margin-bottom: 1rem;
+}
+.search-tab {
+  margin-bottom: 1rem;
+}
+.pagination {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.articleItem {
+  background-color: paleturquoise;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+.articleItem p, .articleItem h3{
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #000;
+  margin: 0;
+  margin-right: 1rem;
+}
+.read-article h1 {
+  font-size: 1.4rem;
+}
+.read-article-info p {
+  display: inline-block;
+  position: relative;
+  margin-right: 1rem;
+}
+.read-article-info p:first-child::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 1.2rem;  
+  top: 2px;
+  right: -8px;
+  border-right: 1px solid #ccc;
+}
+
+/* write article */
+.write-article div {
+  margin: 1rem 0;
+}
+.write-article-content input{
+  width: 90%;
+  height: 10rem;
+}

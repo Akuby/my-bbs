@@ -15,12 +15,11 @@ function ArticleList(props) {
   }
 
   const result = currentArticleList(props.articles).map(
-    (data, idx) => <Article key={idx} idx={idx+1} articleData={data}/>
+    (data, idx) => <Article key={idx} idx={props.articles.length - props.articles.lastIndexOf(data)} articleData={data}/>
   )
 
   return(
-    <div id="ArticleList">
-      <h1>ArticleList</h1>
+    <div id="article-list">
       {result}
       <Pagination total={props.articles.length} itemPerPage={itemPerPage} currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </div>

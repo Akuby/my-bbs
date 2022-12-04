@@ -19,7 +19,7 @@ function Pagination(props) {
     (data, idx) => (<button key={idx} className={currentPage === data ? 'active' : 'page'} onClick={()=>pageClick(data)}>{data}</button>)
   )
   return (
-    <div className="Pagination">
+    <div className="pagination">
       <button onClick={toFirstPage}>&lt;</button>
       {pageNums}
       <button onClick={toLastPage}>&gt;</button>

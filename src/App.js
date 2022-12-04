@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import WriteArticle from './components/WriteArticle'
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import Header from './components/Header'
 import NotFound from './components/NotFound'
 import ReadArticle from './components/ReadArticle';
