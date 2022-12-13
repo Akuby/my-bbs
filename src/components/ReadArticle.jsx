@@ -21,7 +21,7 @@ function ReadArticle(props) {
     (data, idx) => (<ReadArticleContent key={idx} articleContent={data} />)
   )
   const goBack = () => {window.history.back()}
-  const goEdit = () => {}
+  const goEdit = () => {window.location.reload()}
 
   
   if (articleContent !== []) {
