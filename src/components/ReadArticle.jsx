@@ -28,7 +28,7 @@ function ReadArticle(props) {
     return (
       <div id='read'>
       <button onClick={()=>{goBack()}}>뒤로가기</button>
-      <button onClick={()=>{goEdit()}}></button>
+      <button onClick={()=>{goEdit()}}>수정하기</button>
       {result}
       </div>
     )
