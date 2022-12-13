@@ -21,11 +21,14 @@ function ReadArticle(props) {
     (data, idx) => (<ReadArticleContent key={idx} articleContent={data} />)
   )
   const goBack = () => {window.history.back()}
+  const goEdit = () => {}
+
   
   if (articleContent !== []) {
     return (
       <div id='read'>
       <button onClick={()=>{goBack()}}>뒤로가기</button>
+      <button onClick={()=>{goEdit()}}></button>
       {result}
       </div>
     )
